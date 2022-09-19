@@ -5,13 +5,33 @@
 <title>SE 3316 Lab 1</title>
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="lab1.css" />
 </head>
 <body>
-<!-- Place your content here -->
-<h1>SE 3316 Lab 1</h1>
-<p>Hello World!</p>
+<!-- This is the first background  -->
+<div class="search-image">
+    <!--First heading-->
+    <h1>Pokemon</h1>
+    <!--First search bar that is only allowed for naming search-->
+    <div class="name-search" id="name-bar">
+      <input type="text" placeholder="search by name" id="name" class="js-name" onkeyup="myFunction1()"
+        onkeypress="return allLetter(event)" maxlength="20">
+      <button type="submit" id="nameBtn" onclick="nameDescription()">
+        <img src="search.png" alt="">
+      </button>
+    </div>
 
-<!-- Embedded JavaScript go here -->
+    <br>
+    <br>
+
+    <!--Second search bar that is only allowed for number search-->
+    <div class="number-search">
+      <input type="number" placeholder="search by number" id="number" onkeypress="return onlyNumberKey(event)"
+        onkeyup="myFunction2()">
+      <button type="submit" id="numberBtn" onclick="numberDescription()">
+        <img src="search.png" alt="">
+      </button>
+    </div>
+  </div>
 </body>
 </html>
