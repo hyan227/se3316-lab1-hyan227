@@ -207,3 +207,8 @@ li{
     position: relative;
     left: -320px;
 }
+/* This is for search function*/
+.hide{
+    display: none;
+} 
+
