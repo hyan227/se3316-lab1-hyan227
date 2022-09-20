@@ -14,8 +14,6 @@ body{
 h1{
     text-align: right;
     font-size: 38px;
-
-    
 }
 /* This for background image */
 .bg-image{
@@ -191,4 +189,21 @@ li{
 
 .name{
     color: black;
+}
+/* This is for reference page*/
+.referenceBox{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 1000px;
+    background-color: whitesmoke;
+    padding: 100px;
+    position: relative;
+    top: -400px;
+    left: -120px;
+}
+
+.reference{
+   
+    position: relative;
+    left: -320px;
 }
