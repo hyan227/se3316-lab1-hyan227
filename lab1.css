@@ -1,8 +1,9 @@
-*{
+* {
     box-sizing: border-box;
     position: relative;
 }
-body{
+
+body {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,12 +12,13 @@ body{
 
 /* This is for Pokemon heading*/
 
-h1{
+h1 {
     text-align: right;
     font-size: 38px;
 }
+
 /* This for background image */
-.bg-image{
+.bg-image {
     padding: 28em;
     height: 50%;
     background-position: center;
@@ -24,21 +26,23 @@ h1{
     background-size: cover;
 }
 
-.img1{
+.img1 {
     background-image: url('background/background1.jpeg');
     background-attachment: fixed;
-    
+
 }
-.img2{
+
+.img2 {
     background-image: url('background/background2.jpeg');
     background-attachment: fixed;
 }
-.img3{
+
+.img3 {
     background-image: url('background/background3.jpeg');
     background-attachment: fixed;
 }
 
-.search-image{
+.search-image {
     background-image: url('background/background4.jpeg');
     outline: 10px solid black;
     padding: 5em;
@@ -51,10 +55,10 @@ h1{
 }
 
 /* This is for search bar */
-.name-search{
+.name-search {
     width: 100%;
     max-width: 700px;
-    background:rgba(43, 15, 199, 0.2);
+    background: rgba(43, 15, 199, 0.2);
     display: flex;
     align-items: center;
     border-radius: 60px;
@@ -62,7 +66,8 @@ h1{
     position: relative;
     top: -40px;
 }
-.name-search input{
+
+.name-search input {
     background: transparent;
     flex: 1;
     border: 0;
@@ -72,7 +77,7 @@ h1{
     color: rgb(146, 34, 34);
 }
 
-.name-search button{
+.name-search button {
     border: 0;
     border-radius: 50%;
     width: 60px;
@@ -81,15 +86,16 @@ h1{
     cursor: pointer;
 
 }
-.name-search button img{
+
+.name-search button img {
     width: 20px;
 }
 
 
-.number-search{
+.number-search {
     width: 100%;
     max-width: 700px;
-    background:rgba(43, 15, 199, 0.2);
+    background: rgba(43, 15, 199, 0.2);
     display: flex;
     align-items: center;
     border-radius: 60px;
@@ -97,7 +103,8 @@ h1{
     position: relative;
     top: -40px;
 }
-.number-search input{
+
+.number-search input {
     background: transparent;
     flex: 1;
     border: 0;
@@ -107,7 +114,7 @@ h1{
     color: rgb(146, 34, 34);
 }
 
-.number-search button{
+.number-search button {
     border: 0;
     border-radius: 50%;
     width: 60px;
@@ -116,12 +123,14 @@ h1{
     cursor: pointer;
 
 }
-.number-search button img{
+
+.number-search button img {
     width: 20px;
 }
+
 /* This is for pokemon link*/
 
-.pokemonsBox{
+.pokemonsBox {
     box-sizing: border-box;
     width: 1000px;
     height: 3000px;
@@ -133,28 +142,29 @@ h1{
 }
 
 
-li{
+li {
     list-style-type: none;
 
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5px,10px));
-        grid-gap: 200px;
-        margin: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 10px));
+    grid-gap: 200px;
+    margin: 0px;
 }
 
-.img-wrapper{
-    position:relative;
-    
-    
+.img-wrapper {
+    position: relative;
+
+
 }
 
-.img-wrapper img{
+.img-wrapper img {
     width: 150px;
     background-color: thistle;
     cursor: pointer;
-    
+
 }
-.text{
+
+.text {
     position: absolute;
     width: 150px;
     height: 50%;
@@ -162,36 +172,38 @@ li{
     padding: 2px;
     background-color: rgba(255, 255, 255, .4);
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     opacity: 0;
-    
+
 }
 
-.img-wrapper:hover .text{
+.img-wrapper:hover .text {
     opacity: 1;
-    
+
 }
 
-.img-wrapper img, .text{
+.img-wrapper img,
+.text {
     transition: 200ms ease-in-out;
 }
 
-.img-wrapper:hover img{
+.img-wrapper:hover img {
     filter: blur(5px);
-    transform:scale(1.1);
-    
+    transform: scale(1.1);
+
 }
 
-.num{
+.num {
     color: salmon;
 }
 
-.name{
+.name {
     color: black;
 }
+
 /* This is for reference page*/
-.referenceBox{
+.referenceBox {
     box-sizing: border-box;
     width: 1000px;
     height: 1000px;
@@ -202,13 +214,13 @@ li{
     left: -120px;
 }
 
-.reference{
-   
+.reference {
+
     position: relative;
     left: -320px;
 }
-/* This is for search function*/
-.hide{
-    display: none;
-} 
 
+/* This is for search function*/
+.hide {
+    display: none;
+}
