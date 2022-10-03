@@ -130,6 +130,31 @@ h1 {
 
 /* This is for pokemon link*/
 
+.box {
+    box-sizing: border-box;
+    width: 1000px;
+    height: auto;
+    background-color: gray;
+    padding: 100px;
+    position: relative;
+    top: -400px;
+    left: -120px;
+    margin-bottom: 50px;
+}
+.gallery {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 10px));
+    grid-gap: 200px;
+    margin: 0px;
+}
+.gallery li{
+    position: relative;
+}
+
+
+
+
 .pokemonsBox {
     box-sizing: border-box;
     width: 1000px;
