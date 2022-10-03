@@ -10,7 +10,7 @@ function onlyNumberKey(evt) {
 function myFunction1() {
     var searchText = document.getElementById("name").value;
     var divs = document.querySelectorAll(".gallery > div");
-    var box= document.querySelector(".box");
+    var box = document.querySelector(".box");
 
     if (searchText.length > 0) {
         divs.forEach((div) => {
@@ -31,8 +31,8 @@ function myFunction1() {
 function myFunction2() {
     var searchText = document.getElementById("number").value;
     var divs = document.querySelectorAll(".gallery > div");
-    var box= document.querySelector(".box");
-    
+    var box = document.querySelector(".box");
+
     if (searchText.length > 0) {
         divs.forEach((div) => {
             div.classList.add("hide");
@@ -47,7 +47,6 @@ function myFunction2() {
             box.style.display = "none";
         });
     }
-
 }
 
 function allLetter(event) {
@@ -150,7 +149,6 @@ function nameDescription() {
     if (count <= 0) {
         alert("no such Pokemon was found");
     }
-
 }
 
 
