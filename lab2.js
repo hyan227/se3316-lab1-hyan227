@@ -6,6 +6,7 @@ function onlyNumberKey(evt) {
         return false;
     return true;
 }
+// This function is creared for searching pokemons by typing names
 function myFunction1() {
     var searchText = document.getElementById("name").value;
     var divs = document.querySelectorAll(".gallery > div");
@@ -26,7 +27,7 @@ function myFunction1() {
         });
     }
 }
-
+// This function is created for searching pokemons by typing numbers
 function myFunction2() {
     var searchText = document.getElementById("number").value;
     var divs = document.querySelectorAll(".gallery > div");
