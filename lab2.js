@@ -29,21 +29,26 @@ function myFunction1() {
 
 function myFunction2() {
     var searchText = document.getElementById("number").value;
-    var divs = document.querySelectorAll(".my-li > div");
-
+    var divs = document.querySelectorAll(".gallery > div");
+    var box= document.querySelector(".box");
+    
     if (searchText.length > 0) {
         divs.forEach((div) => {
             div.classList.add("hide");
             if ((div.dataset.tags.toUpperCase()).indexOf(searchText.toUpperCase()) > -1) {
+                box.style.display = "block";
                 div.classList.remove("hide");
             }
         });
     } else {
         divs.forEach((div) => {
-            div.classList.remove("hide");
+            div.classList.add("hide");
+            box.style.display = "none";
         });
     }
+
 }
+
 function allLetter(event) {
     var value = String.fromCharCode(event.which);
     var pattern = new RegExp(/[a-zåäö ]/i);
