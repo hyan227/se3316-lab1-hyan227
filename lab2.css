@@ -142,6 +142,7 @@ h1 {
     margin-bottom: 50px;
     display: none;
 }
+
 .gallery {
     list-style-type: none;
     display: grid;
@@ -149,7 +150,8 @@ h1 {
     grid-gap: 200px;
     margin: 0px;
 }
-.gallery li{
+
+.gallery li {
     position: relative;
 }
 
